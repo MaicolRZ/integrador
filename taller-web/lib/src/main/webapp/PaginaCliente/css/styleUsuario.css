@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+body{
+  
+   background-image: url(https://get.pxhere.com/photo/laptop-black-and-white-technology-black-monochrome-multimedia-computer-keyboard-monochrome-photography-electronic-device-computer-hardware-musical-keyboard-58120.jpg);
+   background-size: 100% 100%;
+}
+ 
+.container{
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__principal{
+  background: white;
+  padding: 10px 10px;
+  width: 15px;
+  margin-top: 20px;
+}
+ 
+.login-container{
+  display: flex;
+  width: 800px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
+}
+ 
+.register, .login{
+  flex: 1;
+}
+ 
+.register{
+  padding: 40px;
+  position: relative;
+}
+ 
+.register h2{
+  color: #797979;
+  margin-bottom: 30px;
+}
+ 
+.register input{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 25px;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #333;
+
+}
+ 
+.register input:active,
+.register input:focus{
+  outline: none;
+}
+ 
+.register .submit{
+  width: auto;
+  padding: 10px;
+  background: gray;
+  color: #fff;
+  font-size: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+
+}
+ 
+.register::after{
+  content: '>';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50%;
+  right: -23px;
+  padding: 10px;
+  text-align: center;
+  font-size: 19px;
+  background: #f1f1f1;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
+  color: #7c7c7c;
+}
+ 
+.login{
+  background-image: linear-gradient(to bottom right, black, darkgrey);
+  padding: 40px;
+}
+ 
+.login h2{
+  color: #fff;
+  margin-bottom: 45px;
+}
+ 
+.login button i{
+  position: absolute;
+  top: 12px; 
+  left: 12px;
+}
+ 
+.login button{
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+  cursor: pointer;
+  position: relative;
+}
+ 
+.login .fb{
+  background: darkslateblue;
+  border-style: none;
+  color: #fff;
+}
+ 
+.login .tw{
+  background: darkcyan;
+  border-style: none;
+  color: #fff;
+}
+ 
+.login .correo{
+  background: darkslategray;
+  border-style: none;
+  color: #fff;
+}
+ 
+@media only screen and (max-width: 540px){
+  .login-container{
+    display: block;
+  }
+ 
+  .register, .login{
+    flex: none;
+  }
+ 
+  .register::after{
+    top: unset;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+}
